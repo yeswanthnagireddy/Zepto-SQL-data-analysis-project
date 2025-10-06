@@ -13,7 +13,7 @@ The goal is to simulate how actual data analysts in the e-commerce or retail ind
 
 * Write **business-driven SQL queries** to derive insights around **pricing, inventory, stock availability, revenue** and more
 
-## 📁 Dataset Overview
+## Dataset Overview
 The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/palvinder2006/zepto-inventory-dataset/data?select=zepto_v2.csv) and was originally scraped from Zepto’s official product listings. It mimics what you’d typically encounter in a real-world e-commerce inventory system.
 
 Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate product names exist because the same product may appear multiple times in different package sizes, weights, discounts, or categories to improve visibility – exactly how real catalog data looks.
@@ -39,7 +39,7 @@ Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate p
 
 - **quantity:** Number of units per package (mixed with grams for loose produce)
 
-## 🔧 Project Workflow
+## Project Workflow
 
 Here’s a step-by-step breakdown of what we do in this project:
 
@@ -72,7 +72,7 @@ CREATE TABLE zepto (
 ```
 - Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
 
-### 3. 🔍 Data Exploration
+### 3. Data Exploration
 - Counted the total number of records in the dataset
 
 - Viewed a sample of the dataset to understand structure and content
@@ -85,12 +85,12 @@ CREATE TABLE zepto (
 
 - Detected products present multiple times, representing different SKUs
 
-### 4. 🧹 Data Cleaning
+### 4. Data Cleaning
 - Identified and removed rows where MRP or discounted selling price was zero
 
 - Converted mrp and discountedSellingPrice from paise to rupees for consistency and readability
   
-### 5. 📊 Business Insights
+### 5. Business Insights
 - Found top 10 best-value products based on discount percentage
 
 - Identified high-MRP products that are currently out of stock
@@ -108,7 +108,7 @@ CREATE TABLE zepto (
 - Measured total inventory weight per product category
 
 
-## 🛠️ How to Use This Project
+## How to Use This Project
 
 1. **Clone the repository**
    ```bash
